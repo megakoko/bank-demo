@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		DAB36B252402CD8B00696DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B242402CD8B00696DF7 /* AppDelegate.swift */; };
-		DAB36B292402CD8B00696DF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B282402CD8B00696DF7 /* ViewController.swift */; };
+		DAB36B292402CD8B00696DF7 /* BankListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B282402CD8B00696DF7 /* BankListViewController.swift */; };
 		DAB36B2C2402CD8B00696DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB36B2A2402CD8B00696DF7 /* Main.storyboard */; };
 		DAB36B2E2402CD8D00696DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB36B2D2402CD8D00696DF7 /* Assets.xcassets */; };
 		DAB36B312402CD8D00696DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB36B2F2402CD8D00696DF7 /* LaunchScreen.storyboard */; };
+		DAB36B3B2402CEA000696DF7 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B3A2402CEA000696DF7 /* Bank.swift */; };
+		DAB36B3E2402CF2600696DF7 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B3D2402CF2600696DF7 /* UITableViewCell.swift */; };
+		DAB36B422402CF5700696DF7 /* BankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B402402CF5700696DF7 /* BankCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DAB36B212402CD8B00696DF7 /* BanksDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanksDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB36B242402CD8B00696DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAB36B282402CD8B00696DF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAB36B282402CD8B00696DF7 /* BankListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListViewController.swift; sourceTree = "<group>"; };
 		DAB36B2B2402CD8B00696DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAB36B2D2402CD8D00696DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB36B302402CD8D00696DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB36B322402CD8D00696DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB36B3A2402CEA000696DF7 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		DAB36B3D2402CF2600696DF7 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		DAB36B402402CF5700696DF7 /* BankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		DAB36B232402CD8B00696DF7 /* BanksDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DAB36B3C2402CF1C00696DF7 /* Extensions */,
+				DAB36B392402CE9A00696DF7 /* Model */,
+				DAB36B3F2402CF3F00696DF7 /* BankList */,
 				DAB36B242402CD8B00696DF7 /* AppDelegate.swift */,
-				DAB36B282402CD8B00696DF7 /* ViewController.swift */,
 				DAB36B2D2402CD8D00696DF7 /* Assets.xcassets */,
 				DAB36B2A2402CD8B00696DF7 /* Main.storyboard */,
 				DAB36B2F2402CD8D00696DF7 /* LaunchScreen.storyboard */,
 				DAB36B322402CD8D00696DF7 /* Info.plist */,
 			);
 			path = BanksDemo;
+			sourceTree = "<group>";
+		};
+		DAB36B392402CE9A00696DF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DAB36B3A2402CEA000696DF7 /* Bank.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DAB36B3C2402CF1C00696DF7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DAB36B3D2402CF2600696DF7 /* UITableViewCell.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DAB36B3F2402CF3F00696DF7 /* BankList */ = {
+			isa = PBXGroup;
+			children = (
+				DAB36B282402CD8B00696DF7 /* BankListViewController.swift */,
+				DAB36B402402CF5700696DF7 /* BankCell.swift */,
+			);
+			path = BankList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB36B292402CD8B00696DF7 /* ViewController.swift in Sources */,
+				DAB36B3B2402CEA000696DF7 /* Bank.swift in Sources */,
+				DAB36B3E2402CF2600696DF7 /* UITableViewCell.swift in Sources */,
+				DAB36B422402CF5700696DF7 /* BankCell.swift in Sources */,
+				DAB36B292402CD8B00696DF7 /* BankListViewController.swift in Sources */,
 				DAB36B252402CD8B00696DF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
