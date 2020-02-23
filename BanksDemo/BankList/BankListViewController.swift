@@ -32,6 +32,24 @@ class BankListViewController: UITableViewController {
     }
 }
 
+// MARK: - UIViewController
+
+extension BankListViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "BankDetails":
+            guard let selectedIndexPath = tableView.indexPathForSelectedRow else { return }
+            guard let vc = segue.destination as? BankViewController else { return }
+            vc.bank = banks[selectedIndexPath.row]
+        default:
+            break
+        }
+    }
+}
+
+
+// MARK: - UITableViewController
+
 extension BankListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return banks.count
@@ -41,5 +59,9 @@ extension BankListViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: BankCell.className, for: indexPath) as! BankCell
         cell.configure(for: banks[indexPath.row])
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "BankDetails", sender: self)
     }
 }

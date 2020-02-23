@@ -16,6 +16,7 @@
 		DAB36B3E2402CF2600696DF7 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B3D2402CF2600696DF7 /* UITableViewCell.swift */; };
 		DAB36B422402CF5700696DF7 /* BankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B402402CF5700696DF7 /* BankCell.swift */; };
 		DAB36B462402D07A00696DF7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B452402D07A00696DF7 /* NetworkManager.swift */; };
+		DAB36B492402D64700696DF7 /* BankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B482402D64700696DF7 /* BankViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DAB36B3D2402CF2600696DF7 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		DAB36B402402CF5700696DF7 /* BankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCell.swift; sourceTree = "<group>"; };
 		DAB36B452402D07A00696DF7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DAB36B482402D64700696DF7 /* BankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				DAB36B3C2402CF1C00696DF7 /* Extensions */,
 				DAB36B392402CE9A00696DF7 /* Model */,
 				DAB36B3F2402CF3F00696DF7 /* BankList */,
+				DAB36B472402D63900696DF7 /* Bank */,
 				DAB36B242402CD8B00696DF7 /* AppDelegate.swift */,
 				DAB36B2D2402CD8D00696DF7 /* Assets.xcassets */,
 				DAB36B2A2402CD8B00696DF7 /* Main.storyboard */,
@@ -106,6 +109,14 @@
 				DAB36B452402D07A00696DF7 /* NetworkManager.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DAB36B472402D63900696DF7 /* Bank */ = {
+			isa = PBXGroup;
+			children = (
+				DAB36B482402D64700696DF7 /* BankViewController.swift */,
+			);
+			path = Bank;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB36B492402D64700696DF7 /* BankViewController.swift in Sources */,
 				DAB36B462402D07A00696DF7 /* NetworkManager.swift in Sources */,
 				DAB36B3B2402CEA000696DF7 /* Bank.swift in Sources */,
 				DAB36B3E2402CF2600696DF7 /* UITableViewCell.swift in Sources */,
