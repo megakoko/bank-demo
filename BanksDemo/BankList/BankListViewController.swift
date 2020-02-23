@@ -18,7 +18,13 @@ class BankListViewController: UITableViewController {
     }
 
     private func initData() {
-        banks = [Bank(id: "test", displayable_name: "Test")]
+        NetworkManager.shared.getBanks { banks in
+            DispatchQueue.main.async {
+                guard let banks = banks else { return }
+                self.banks = banks
+                self.tableView.reloadData()
+            }
+        }
     }
 
     private func initUI() {

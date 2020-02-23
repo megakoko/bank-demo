@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Banks-->
         <scene sceneID="udV-kL-9oF">
             <objects>
                 <tableViewController id="5Oz-8q-oKM" customClass="BankListViewController" customModule="BanksDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                             <outlet property="delegate" destination="5Oz-8q-oKM" id="uN0-mh-D46"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="QLi-KC-8kc"/>
+                    <navigationItem key="navigationItem" title="Banks" id="QLi-KC-8kc"/>
                     <connections>
                         <segue destination="Xrv-pR-DWQ" kind="show" identifier="ShowBankDetails" id="azb-Aj-tVf"/>
                     </connections>
