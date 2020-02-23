@@ -14,6 +14,6 @@ class BankCell: UITableViewCell {
     }
 
     func configure(for bank: Bank) {
-        textLabel?.text = bank.displayable_name
+        textLabel?.text = bank.name
     }
 }

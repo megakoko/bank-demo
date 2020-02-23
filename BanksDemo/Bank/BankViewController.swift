@@ -22,9 +22,9 @@ class BankViewController: UITableViewController {
     }
 
     private func initUI() {
-        title = bank.displayable_name
-        appToAppSupportLabel.text = bank.supports_app_to_app ? "Yes" : "No"
-        if let logoUrl = URL(string: bank.logo) {
+        title = bank.name
+        appToAppSupportLabel.text = bank.supportsAppToApp ? "Yes" : "No"
+        if let logoUrl = URL(string: bank.logoUrl) {
             logoWebView.load(URLRequest(url: logoUrl))
         }
         divisionsLabel.text = bank.divisions.isEmpty ? "None" : bank.divisions.joined(separator: ", ")

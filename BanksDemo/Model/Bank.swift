@@ -10,10 +10,20 @@ import Foundation
 
 struct Bank: Decodable {
     let id: String
-    let displayable_name: String
-    let logo: String
-    let icon: String
-    let main_bg_color: String
-    let supports_app_to_app: Bool
+    let name: String
+    let logoUrl: String
+    let iconUrl: String
+    let mainBgColor: String
+    let supportsAppToApp: Bool
     let divisions: [String]
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name = "displayable_name"
+        case logoUrl = "logo"
+        case iconUrl = "icon"
+        case mainBgColor = "main_bg_color"
+        case supportsAppToApp = "supports_app_to_app"
+        case divisions
+    }
 }
