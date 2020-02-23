@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DAB36B252402CD8B00696DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B242402CD8B00696DF7 /* AppDelegate.swift */; };
-		DAB36B272402CD8B00696DF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B262402CD8B00696DF7 /* SceneDelegate.swift */; };
 		DAB36B292402CD8B00696DF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B282402CD8B00696DF7 /* ViewController.swift */; };
 		DAB36B2C2402CD8B00696DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB36B2A2402CD8B00696DF7 /* Main.storyboard */; };
 		DAB36B2E2402CD8D00696DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB36B2D2402CD8D00696DF7 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		DAB36B212402CD8B00696DF7 /* BanksDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanksDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB36B242402CD8B00696DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAB36B262402CD8B00696DF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DAB36B282402CD8B00696DF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DAB36B2B2402CD8B00696DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAB36B2D2402CD8D00696DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,10 +55,9 @@
 			isa = PBXGroup;
 			children = (
 				DAB36B242402CD8B00696DF7 /* AppDelegate.swift */,
-				DAB36B262402CD8B00696DF7 /* SceneDelegate.swift */,
 				DAB36B282402CD8B00696DF7 /* ViewController.swift */,
-				DAB36B2A2402CD8B00696DF7 /* Main.storyboard */,
 				DAB36B2D2402CD8D00696DF7 /* Assets.xcassets */,
+				DAB36B2A2402CD8B00696DF7 /* Main.storyboard */,
 				DAB36B2F2402CD8D00696DF7 /* LaunchScreen.storyboard */,
 				DAB36B322402CD8D00696DF7 /* Info.plist */,
 			);
@@ -140,7 +137,6 @@
 			files = (
 				DAB36B292402CD8B00696DF7 /* ViewController.swift in Sources */,
 				DAB36B252402CD8B00696DF7 /* AppDelegate.swift in Sources */,
-				DAB36B272402CD8B00696DF7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.software.BanksDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.software.BanksDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
