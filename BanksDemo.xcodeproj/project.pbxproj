@@ -17,6 +17,8 @@
 		DAB36B422402CF5700696DF7 /* BankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B402402CF5700696DF7 /* BankCell.swift */; };
 		DAB36B462402D07A00696DF7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B452402D07A00696DF7 /* NetworkManager.swift */; };
 		DAB36B492402D64700696DF7 /* BankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B482402D64700696DF7 /* BankViewController.swift */; };
+		DAB36B4B2402DCE100696DF7 /* BankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB36B4A2402DCE100696DF7 /* BankCell.xib */; };
+		DAB36B4D2402E31600696DF7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB36B4C2402E31600696DF7 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		DAB36B402402CF5700696DF7 /* BankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCell.swift; sourceTree = "<group>"; };
 		DAB36B452402D07A00696DF7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DAB36B482402D64700696DF7 /* BankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankViewController.swift; sourceTree = "<group>"; };
+		DAB36B4A2402DCE100696DF7 /* BankCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BankCell.xib; sourceTree = "<group>"; };
+		DAB36B4C2402E31600696DF7 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB36B3D2402CF2600696DF7 /* UITableViewCell.swift */,
+				DAB36B4C2402E31600696DF7 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 			children = (
 				DAB36B282402CD8B00696DF7 /* BankListViewController.swift */,
 				DAB36B402402CF5700696DF7 /* BankCell.swift */,
+				DAB36B4A2402DCE100696DF7 /* BankCell.xib */,
 			);
 			path = BankList;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB36B312402CD8D00696DF7 /* LaunchScreen.storyboard in Resources */,
+				DAB36B4B2402DCE100696DF7 /* BankCell.xib in Resources */,
 				DAB36B2E2402CD8D00696DF7 /* Assets.xcassets in Resources */,
 				DAB36B2C2402CD8B00696DF7 /* Main.storyboard in Resources */,
 			);
@@ -195,6 +202,7 @@
 				DAB36B3B2402CEA000696DF7 /* Bank.swift in Sources */,
 				DAB36B3E2402CF2600696DF7 /* UITableViewCell.swift in Sources */,
 				DAB36B422402CF5700696DF7 /* BankCell.swift in Sources */,
+				DAB36B4D2402E31600696DF7 /* UIColor.swift in Sources */,
 				DAB36B292402CD8B00696DF7 /* BankListViewController.swift in Sources */,
 				DAB36B252402CD8B00696DF7 /* AppDelegate.swift in Sources */,
 			);

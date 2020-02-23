@@ -28,7 +28,7 @@ class BankListViewController: UITableViewController {
     }
 
     private func initUI() {
-        tableView.register(BankCell.self, forCellReuseIdentifier: BankCell.className)
+        tableView.register(UINib(nibName: BankCell.className, bundle: nil), forCellReuseIdentifier: BankCell.className)
     }
 }
 
